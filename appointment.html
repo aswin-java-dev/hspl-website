@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>appointment</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<section id="appointment">
+    <div class="section-title">
+        <h2>Book Appointment</h2>
+    </div>
+
+    <form class="appointment-form">
+        <input type="text" placeholder="Patient Name" required>
+        <input type="email" placeholder="Email Address" required>
+        <input type="tel" placeholder="Phone Number" required>
+        <input type="date" required>
+
+        <select required>
+            <option>Select Department</option>
+            <option>Cardiology</option>
+            <option>Neurology</option>
+            <option>Orthopedics</option>
+        </select>
+
+        <textarea placeholder="Describe Your Problem"></textarea>
+
+        <button type="submit">Book Appointment</button>
+    </form>
+</section>
+<script>
+document.querySelector(".appointment-form")
+.addEventListener("submit", function(e){
+    e.preventDefault();
+    alert("Appointment Booked Successfully!");
+    this.reset();
+});
+</script>
+
+<section>
+</body>
+</html>

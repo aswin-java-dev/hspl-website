@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>contact</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<section>
+    <div class="section-title">
+        <h2>Contact Us</h2>
+    </div>
+
+    <form class="contact-form">
+        <input type="text" placeholder="Your Name">
+        <input type="email" placeholder="Email Address">
+        <input type="text" placeholder="Phone Number">
+        <textarea rows="5" placeholder="Message"></textarea>
+        <button type="submit">Send Message</button>
+    </form>
+</section>
+<script>
+    document.querySelector(".contact-form")
+.addEventListener("submit", function(e){
+    e.preventDefault();
+    alert("Message Sent Successfully!");
+    this.reset();
+});
+</script>
+</body>
+</html>
